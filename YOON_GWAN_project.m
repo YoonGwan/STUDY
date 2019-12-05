@@ -1,4 +1,4 @@
-
+//Using MATLAB//
 clc; close all; clear;
 
 f_id = fopen('source_JPARK2019_vfinal.txt', 'r');
@@ -16,6 +16,8 @@ sample_length = length(Sample_r);
 R = [];
 
 LearningPhase_array = 1000:1000:80000;
+
+//1000부터 1000씩 증가해서 80000까지 러닝시키려고 자료를 분류(더 세분화 할수록 더 정확한 결과가 나오겠죠)//
 
 for i=  4 : 7 ;
 for idx_learning = 1:length(LearningPhase_array)
